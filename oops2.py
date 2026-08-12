@@ -73,7 +73,6 @@ d1 = Driver("suresh","tata","Tallur",True)
 r1 = Ride(p1,d1,100)
 
 print(r1.driver.name)
-print(r1.location)
 
 print(r1.status)
 print(r1.calculate_fare())
