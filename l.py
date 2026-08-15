@@ -20,13 +20,14 @@ for name in names:
 
 # find pairs whose sum is x
 
-q = [2,7,4,8]
-nz= int(input())
+q = [2,7,4,5]
+n= int(input())
 l= []
 for i in range(len(q)):
-    for j in (i+1,len(q)):
-        if q[i]+q[j]==n:
-            l.extend([i,j])
+    for j in range(i+1,len(q)):
+        if q[i]+q[j] == n:
+            l.extend([q[i],q[j]])
+
 
 for i in l:
     print(i,end=" ")
