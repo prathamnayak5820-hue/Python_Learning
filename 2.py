@@ -39,6 +39,30 @@ w =len(l)-1
 for i in range(len(l)):
     r_list.append(l[w-i])
 print(r_list)
+
+
+
+
+n= 4321
+rev =0
+while n>0:
+    
+    d=n%10
+    rev = (rev*10)+d
+    n=n//10
+print(rev)
+
+
+t=5
+s={}
+o=[2,3,44,32]
+for i ,j in enumerate(o):
+    d= t-j
+    if d in s:
+        print(s[d],i)
+        break
+    s[j]=i
+
     
 
 
